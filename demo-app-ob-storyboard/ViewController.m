@@ -12,8 +12,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
     // Do any additional setup after loading the view.
+}
+
+- (IBAction)ConfirmClicked:(id)sender {
+    NSAlert *alert = [[NSAlert alloc] init];
+    [alert setMessageText:@"Message text."];
+    [alert setInformativeText:@"Informative text."];
+    [alert addButtonWithTitle:@"Cancel"];
+    [alert addButtonWithTitle:@"Ok"];
+    [alert runModal];
+    
+}
+
+- (IBAction)Clicked:(id)sender {
+    
 }
 
 
