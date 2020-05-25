@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   version = "1.3">
+   <BuildAction>
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForRunning = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "433598862477CC9D00BA5A66"
+               BuildableName = "demo-app-ob-storyboard.app"
+               BlueprintName = "demo-app-ob-storyboard"
+               ReferencedContainer = "container:demo-app-ob-storyboard.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <LaunchAction
+      useCustomWorkingDirectory = "NO"
+      buildConfiguration = "Debug"
+      allowLocationSimulation = "YES">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "433598862477CC9D00BA5A66"
+            BuildableName = "demo-app-ob-storyboard.app"
+            BlueprintName = "demo-app-ob-storyboard"
+            ReferencedContainer = "container:demo-app-ob-storyboard.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </LaunchAction>
+</Scheme>
