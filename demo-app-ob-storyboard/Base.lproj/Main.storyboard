@@ -789,7 +789,7 @@
         <!--详情展示页-->
         <scene sceneID="gwe-Lp-j4t">
             <objects>
-                <viewController title="详情展示页" showSeguePresentationStyle="single" id="1FH-JN-BNS" sceneMemberID="viewController">
+                <viewController title="详情展示页" showSeguePresentationStyle="single" id="1FH-JN-BNS" customClass="DetailController" sceneMemberID="viewController">
                     <view key="view" id="ayV-5L-V5D">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -832,6 +832,10 @@
                             </textField>
                         </subviews>
                     </view>
+                    <connections>
+                        <outlet property="nameTextField" destination="eFP-he-9Og" id="lMq-iE-SKo"/>
+                        <outlet property="phoneTextField" destination="z4v-wh-HmT" id="rBL-sU-Q8M"/>
+                    </connections>
                 </viewController>
                 <customObject id="jwc-NA-hBZ" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>

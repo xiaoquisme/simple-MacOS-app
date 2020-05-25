@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32CE654AF8F8FE9A76ED7176 /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CE6BFD0A6DE8C2A1572BBA /* UserInfo.m */; };
 		32CE6896E04EB8F1E973BC03 /* backgroundColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CE64506637FEBB40EF4E5F /* backgroundColor.m */; };
 		4335988C2477CC9D00BA5A66 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4335988B2477CC9D00BA5A66 /* AppDelegate.m */; };
 		4335988F2477CC9D00BA5A66 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4335988E2477CC9D00BA5A66 /* ViewController.m */; };
@@ -16,6 +17,7 @@
 		4335989A2477CC9F00BA5A66 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 433598992477CC9F00BA5A66 /* main.m */; };
 		433598A52477CC9F00BA5A66 /* demo_app_ob_storyboardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 433598A42477CC9F00BA5A66 /* demo_app_ob_storyboardTests.m */; };
 		433598B02477CC9F00BA5A66 /* demo_app_ob_storyboardUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 433598AF2477CC9F00BA5A66 /* demo_app_ob_storyboardUITests.m */; };
+		43942B37247BA0BB00DD152F /* DetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43942B36247BA0BB00DD152F /* DetailController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		32CE60AD1C18472A7EA6FD6F /* UserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfo.h; sourceTree = "<group>"; };
 		32CE64506637FEBB40EF4E5F /* backgroundColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = backgroundColor.m; sourceTree = "<group>"; };
 		32CE6A8CE23038FB29982014 /* backgroundColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = backgroundColor.h; sourceTree = "<group>"; };
+		32CE6BFD0A6DE8C2A1572BBA /* UserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfo.m; sourceTree = "<group>"; };
 		433598872477CC9D00BA5A66 /* demo-app-ob-storyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "demo-app-ob-storyboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4335988A2477CC9D00BA5A66 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4335988B2477CC9D00BA5A66 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -55,6 +59,8 @@
 		433598AB2477CC9F00BA5A66 /* demo-app-ob-storyboardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "demo-app-ob-storyboardUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		433598AF2477CC9F00BA5A66 /* demo_app_ob_storyboardUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = demo_app_ob_storyboardUITests.m; sourceTree = "<group>"; };
 		433598B12477CC9F00BA5A66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43942B35247BA0BB00DD152F /* DetailController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailController.h; sourceTree = "<group>"; };
+		43942B36247BA0BB00DD152F /* DetailController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +123,10 @@
 				433598902477CC9D00BA5A66 /* demo_app_ob_storyboard.xcdatamodeld */,
 				32CE64506637FEBB40EF4E5F /* backgroundColor.m */,
 				32CE6A8CE23038FB29982014 /* backgroundColor.h */,
+				43942B35247BA0BB00DD152F /* DetailController.h */,
+				43942B36247BA0BB00DD152F /* DetailController.m */,
+				32CE6BFD0A6DE8C2A1572BBA /* UserInfo.m */,
+				32CE60AD1C18472A7EA6FD6F /* UserInfo.h */,
 			);
 			path = "demo-app-ob-storyboard";
 			sourceTree = "<group>";
@@ -271,8 +281,10 @@
 				4335988F2477CC9D00BA5A66 /* ViewController.m in Sources */,
 				4335988C2477CC9D00BA5A66 /* AppDelegate.m in Sources */,
 				4335989A2477CC9F00BA5A66 /* main.m in Sources */,
+				43942B37247BA0BB00DD152F /* DetailController.m in Sources */,
 				433598922477CC9D00BA5A66 /* demo_app_ob_storyboard.xcdatamodeld in Sources */,
 				32CE6896E04EB8F1E973BC03 /* backgroundColor.m in Sources */,
+				32CE654AF8F8FE9A76ED7176 /* UserInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

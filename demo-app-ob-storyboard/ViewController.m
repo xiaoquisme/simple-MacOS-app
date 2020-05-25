@@ -7,18 +7,40 @@
 //
 
 #import "ViewController.h"
+#import "DetailController.h"
+#import "UserInfo.h"
 
 @implementation ViewController
 
 @synthesize nameTextField;
-@synthesize nameTest;
 @synthesize phoneTextField;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
 }
 
+- (void)prepareForSegue:(NSStoryboardSegue *)segue sender:(nullable id)sender {
+    DetailController *detailController = [[DetailController alloc] init];
+    detailController = segue.destinationController;
+    UserInfo *userInfo = [[UserInfo alloc] init];
+    [userInfo setName:[self getName] andPhone:[self getPhone]];
+    detailController.userInfo= userInfo;
+}
+
+
+- (NSString *)getName {
+    return [nameTextField stringValue];
+}
+
+- (NSString *)getPhone {
+    return [phoneTextField stringValue];
+}
+
 - (IBAction)ConfirmClicked:(id)sender {
+
+}
+
+- (IBAction)CancelClicked:(id)sender {
 //    NSString *name = [nameTextField stringValue];
 //    NSString *phone = [phoneTextField stringValue];
 //    NSAlert *alert = [[NSAlert alloc] init];
@@ -27,11 +49,8 @@
 //    [alert addButtonWithTitle:@"Cancel"];
 //    [alert addButtonWithTitle:@"Ok"];
 //    [alert runModal];
-}
-
-- (IBAction)CancelClicked:(id)sender {
-    [nameTextField setStringValue: @""];
-    [phoneTextField setStringValue: @""];
+    [nameTextField setStringValue:@""];
+    [phoneTextField setStringValue:@""];
 }
 
 

@@ -1,0 +1,21 @@
+//
+//  DetailController.m
+//  demo-app-ob-storyboard
+//
+//  Created by Lianqing Qu  on 5/25/20.
+//  Copyright © 2020 Lianqing Qu . All rights reserved.
+//
+
+#import "DetailController.h"
+
+@implementation DetailController
+@synthesize userInfo;
+@synthesize nameTextField;
+@synthesize phoneTextField;
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    [nameTextField setStringValue:[userInfo name]];
+    [phoneTextField setStringValue:[userInfo phone]];
+}
+@end
