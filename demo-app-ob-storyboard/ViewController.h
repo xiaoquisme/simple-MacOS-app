@@ -9,6 +9,8 @@
 #import <Cocoa/Cocoa.h>
 
 @interface ViewController : NSViewController
-
+@property (weak) IBOutlet NSTextField *nameTextField;
+@property (weak) IBOutlet NSTextField *phoneTextField;
+@property (weak) IBOutlet NSTextFieldCell *nameTest;
 @end
 

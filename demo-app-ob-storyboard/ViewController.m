@@ -10,23 +10,28 @@
 
 @implementation ViewController
 
+@synthesize nameTextField;
+@synthesize nameTest;
+@synthesize phoneTextField;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
 }
 
 - (IBAction)ConfirmClicked:(id)sender {
-    NSAlert *alert = [[NSAlert alloc] init];
-    [alert setMessageText:@"Message text."];
-    [alert setInformativeText:@"Informative text."];
-    [alert addButtonWithTitle:@"Cancel"];
-    [alert addButtonWithTitle:@"Ok"];
-    [alert runModal];
-    
+//    NSString *name = [nameTextField stringValue];
+//    NSString *phone = [phoneTextField stringValue];
+//    NSAlert *alert = [[NSAlert alloc] init];
+//    [alert setMessageText:[NSString stringWithFormat:@"this is name %@, this is phone %@", name, phone]];
+//    [alert setInformativeText:@"Informative text."];
+//    [alert addButtonWithTitle:@"Cancel"];
+//    [alert addButtonWithTitle:@"Ok"];
+//    [alert runModal];
 }
 
-- (IBAction)Clicked:(id)sender {
-    
+- (IBAction)CancelClicked:(id)sender {
+    [nameTextField setStringValue: @""];
+    [phoneTextField setStringValue: @""];
 }
 
 
