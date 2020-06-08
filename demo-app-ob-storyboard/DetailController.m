@@ -7,6 +7,7 @@
 //
 
 #import "DetailController.h"
+#import "AppendText.h"
 
 @implementation DetailController
 @synthesize userInfo;
@@ -15,7 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [nameTextField setStringValue:[userInfo name]];
+    AppendText *appendText = [[AppendText alloc] init];
+    [nameTextField setStringValue:[appendText Append:[userInfo name]]];
     [phoneTextField setStringValue:[userInfo phone]];
 }
 @end

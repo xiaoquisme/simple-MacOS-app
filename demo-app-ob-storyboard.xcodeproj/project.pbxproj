@@ -18,6 +18,7 @@
 		433598A52477CC9F00BA5A66 /* demo_app_ob_storyboardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 433598A42477CC9F00BA5A66 /* demo_app_ob_storyboardTests.m */; };
 		433598B02477CC9F00BA5A66 /* demo_app_ob_storyboardUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 433598AF2477CC9F00BA5A66 /* demo_app_ob_storyboardUITests.m */; };
 		43942B37247BA0BB00DD152F /* DetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43942B36247BA0BB00DD152F /* DetailController.m */; };
+		43942B52247F8F0E00DD152F /* AppendText.m in Sources */ = {isa = PBXBuildFile; fileRef = 43942B51247F8F0E00DD152F /* AppendText.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,8 @@
 		433598B12477CC9F00BA5A66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43942B35247BA0BB00DD152F /* DetailController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailController.h; sourceTree = "<group>"; };
 		43942B36247BA0BB00DD152F /* DetailController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailController.m; sourceTree = "<group>"; };
+		43942B50247F8F0E00DD152F /* AppendText.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppendText.h; sourceTree = "<group>"; };
+		43942B51247F8F0E00DD152F /* AppendText.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppendText.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +130,8 @@
 				43942B36247BA0BB00DD152F /* DetailController.m */,
 				32CE6BFD0A6DE8C2A1572BBA /* UserInfo.m */,
 				32CE60AD1C18472A7EA6FD6F /* UserInfo.h */,
+				43942B50247F8F0E00DD152F /* AppendText.h */,
+				43942B51247F8F0E00DD152F /* AppendText.m */,
 			);
 			path = "demo-app-ob-storyboard";
 			sourceTree = "<group>";
@@ -282,6 +287,7 @@
 				4335988C2477CC9D00BA5A66 /* AppDelegate.m in Sources */,
 				4335989A2477CC9F00BA5A66 /* main.m in Sources */,
 				43942B37247BA0BB00DD152F /* DetailController.m in Sources */,
+				43942B52247F8F0E00DD152F /* AppendText.m in Sources */,
 				433598922477CC9D00BA5A66 /* demo_app_ob_storyboard.xcdatamodeld in Sources */,
 				32CE6896E04EB8F1E973BC03 /* backgroundColor.m in Sources */,
 				32CE654AF8F8FE9A76ED7176 /* UserInfo.m in Sources */,
@@ -448,7 +454,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 9Z52FQXV2R;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
 				INFOPLIST_FILE = "demo-app-ob-storyboard/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -467,7 +473,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 9Z52FQXV2R;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
 				INFOPLIST_FILE = "demo-app-ob-storyboard/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
