@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		32CE654AF8F8FE9A76ED7176 /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CE6BFD0A6DE8C2A1572BBA /* UserInfo.m */; };
 		32CE6896E04EB8F1E973BC03 /* backgroundColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CE64506637FEBB40EF4E5F /* backgroundColor.m */; };
+		4330BF46248E388D0035DAD2 /* func.list in Resources */ = {isa = PBXBuildFile; fileRef = 4330BF44248E388D0035DAD2 /* func.list */; };
 		4335988C2477CC9D00BA5A66 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4335988B2477CC9D00BA5A66 /* AppDelegate.m */; };
 		4335988F2477CC9D00BA5A66 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4335988E2477CC9D00BA5A66 /* ViewController.m */; };
 		433598922477CC9D00BA5A66 /* demo_app_ob_storyboard.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 433598902477CC9D00BA5A66 /* demo_app_ob_storyboard.xcdatamodeld */; };
@@ -43,6 +44,10 @@
 		32CE64506637FEBB40EF4E5F /* backgroundColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = backgroundColor.m; sourceTree = "<group>"; };
 		32CE6A8CE23038FB29982014 /* backgroundColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = backgroundColor.h; sourceTree = "<group>"; };
 		32CE6BFD0A6DE8C2A1572BBA /* UserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfo.m; sourceTree = "<group>"; };
+		4330BF42248E35F00035DAD2 /* confuse.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = confuse.sh; sourceTree = "<group>"; };
+		4330BF44248E388D0035DAD2 /* func.list */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = func.list; sourceTree = "<group>"; };
+		4330BF45248E388D0035DAD2 /* codeObfuscation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = codeObfuscation.h; sourceTree = "<group>"; };
+		4330BF47248E39B20035DAD2 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		433598872477CC9D00BA5A66 /* demo-app-ob-storyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "demo-app-ob-storyboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4335988A2477CC9D00BA5A66 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4335988B2477CC9D00BA5A66 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -91,6 +96,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4330BF41248E35D50035DAD2 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				4330BF45248E388D0035DAD2 /* codeObfuscation.h */,
+				4330BF44248E388D0035DAD2 /* func.list */,
+				4330BF42248E35F00035DAD2 /* confuse.sh */,
+				4330BF47248E39B20035DAD2 /* PrefixHeader.pch */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		4335987E2477CC9D00BA5A66 = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +130,7 @@
 		433598892477CC9D00BA5A66 /* demo-app-ob-storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				4330BF41248E35D50035DAD2 /* Resource */,
 				4335988A2477CC9D00BA5A66 /* AppDelegate.h */,
 				4335988B2477CC9D00BA5A66 /* AppDelegate.m */,
 				4335988D2477CC9D00BA5A66 /* ViewController.h */,
@@ -164,6 +181,7 @@
 				433598832477CC9D00BA5A66 /* Sources */,
 				433598842477CC9D00BA5A66 /* Frameworks */,
 				433598852477CC9D00BA5A66 /* Resources */,
+				4330BF43248E360E0035DAD2 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -259,6 +277,7 @@
 			files = (
 				433598942477CC9F00BA5A66 /* Assets.xcassets in Resources */,
 				433598972477CC9F00BA5A66 /* Main.storyboard in Resources */,
+				4330BF46248E388D0035DAD2 /* func.list in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +296,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4330BF43248E360E0035DAD2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n$PROJECT_DIR/demo-app-ob-storyboard/Resource/confuse.sh\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		433598832477CC9D00BA5A66 /* Sources */ = {
@@ -455,6 +494,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 9Z52FQXV2R;
 				ENABLE_HARDENED_RUNTIME = NO;
+				GCC_PREFIX_HEADER = "$PROJECT_DIR/demo-app-ob-storyboard/Resource/PrefixHeader.pch";
 				INFOPLIST_FILE = "demo-app-ob-storyboard/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -474,6 +514,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 9Z52FQXV2R;
 				ENABLE_HARDENED_RUNTIME = NO;
+				GCC_PREFIX_HEADER = "$PROJECT_DIR/demo-app-ob-storyboard/Resource/PrefixHeader.pch";
 				INFOPLIST_FILE = "demo-app-ob-storyboard/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
